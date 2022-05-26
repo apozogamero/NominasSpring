@@ -14,7 +14,7 @@ import es.sotero.nominas.business.repositories.DatosNoCorrectosException;
 public class Empleado {
 
 	@Id
-	@Column(name="id")
+	@Column(name="dni")
 	//@GeneratedValue(strategy=GenerationType.AUTO)
 	public String dni;
 	
