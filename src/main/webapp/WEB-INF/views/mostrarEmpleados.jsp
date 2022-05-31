@@ -12,8 +12,17 @@
         	font-weight: bold;
         	background-color: black;
         	color: white;
-        	width: 80px;
+        	width: 100px;
         	text-align: center;
+        	border: 1px solid black;
+        }
+        th {
+        	font-weight: bold;
+        	background-color: white;
+        	color: black;
+        	width: 100px;
+        	text-align: center;
+        	border: 1px solid black;
         }
 	</style>
 </head>
@@ -30,15 +39,16 @@
 		</tr>
 		<c:forEach var="emp" items="${model.listaEmp}">
 			<tr>
-				<td><c:out value="${emp.nombre}"></c:out></td>
-				<td><c:out value="${emp.dni}"></c:out></td>
-				<td><c:out value="${emp.sexo}"></c:out></td>
-				<td><c:out value="${emp.categoria}"></c:out></td>
-				<td><c:out value="${emp.anyos}"></c:out></td>
+				<th><c:out value="${emp.nombre}"></c:out></th>
+				<th><c:out value="${emp.dni}"></c:out></th>
+				<th><c:out value="${emp.sexo}"></c:out></th>
+				<th><c:out value="${emp.categoria}"></c:out></th>
+				<th><c:out value="${emp.anyos}"></c:out></th>
 			</tr>
 		</c:forEach>
 	</table>
 	
+	<br/>
 	<a href="<c:url value="bienvenida.htm"/>">Volver</a>
 </body>
 </html>
