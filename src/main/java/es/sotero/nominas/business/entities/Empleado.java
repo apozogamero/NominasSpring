@@ -2,8 +2,8 @@ package es.sotero.nominas.business.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
+//import javax.persistence.GeneratedValue;
+//import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -17,11 +17,39 @@ public class Empleado {
 	@Column(name="dni")
 	//@GeneratedValue(strategy=GenerationType.AUTO)
 	public String dni;
-	
+
 	public String nombre;
 	public char sexo;
 	private int categoria;
 	public int anyos;
+	
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public char getSexo() {
+		return sexo;
+	}
+
+	public void setSexo(char sexo) {
+		this.sexo = sexo;
+	}
+
+	public int getAnyos() {
+		return anyos;
+	}
+
+	public void setAnyos(int anyos) {
+		this.anyos = anyos;
+	}
+
+	public String getDni() {
+		return dni;
+	}
 
 	public int getCategoria() {
 		return categoria;

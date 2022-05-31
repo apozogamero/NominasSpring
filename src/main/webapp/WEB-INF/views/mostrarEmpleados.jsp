@@ -28,7 +28,7 @@
 			<td>Categoría</td>
 			<td>Años</td>
 		</tr>
-		<c:forEach var="emp" items="${listaEmp}">
+		<c:forEach var="emp" items="${model.listaEmp}">
 			<tr>
 				<td><c:out value="${emp.nombre}"></c:out></td>
 				<td><c:out value="${emp.dni}"></c:out></td>
