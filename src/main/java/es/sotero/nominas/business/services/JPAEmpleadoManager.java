@@ -17,4 +17,9 @@ public class JPAEmpleadoManager implements EmpleadoManager {
     public List<Empleado> getEmpleadoAll() {
         return (List<Empleado>) empRepository.findAll();
     }
+
+	@Override
+	public Empleado getEmpleado(String dni) {
+		return empRepository.findByDni(dni);
+	}
 }

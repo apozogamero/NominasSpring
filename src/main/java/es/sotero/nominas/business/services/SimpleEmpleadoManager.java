@@ -9,6 +9,7 @@ import es.sotero.nominas.business.entities.Empleado;
 public class SimpleEmpleadoManager implements EmpleadoManager {
 
     private List<Empleado> listaEmp;
+    private Empleado emp;
 
     public List<Empleado> getEmpleadoAll() {
         return listaEmp; 
@@ -17,4 +18,8 @@ public class SimpleEmpleadoManager implements EmpleadoManager {
     public void setEmpleadoAll(List<Empleado> listaEmp) {
         this.listaEmp = listaEmp;
     }
+
+	public Empleado getEmpleado(String dni) {
+		return emp;
+	}
 }

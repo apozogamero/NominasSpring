@@ -7,5 +7,7 @@ import es.sotero.nominas.business.entities.Empleado;
 public interface EmpleadoManager {
     
     public List<Empleado> getEmpleadoAll();
+    
+    public Empleado getEmpleado(String dni);
 
 }

@@ -28,8 +28,8 @@
 	<div>
     	<a href="<c:url value="getEmpleadoAll.htm"/>">Mostrar todos los empleados</a>
 	</div>
-	<!--<div>
-    	<a href="<c:url value="searchEmpleado.htm"/>">Mostrar el salario de un empleado</a>
-	</div>-->
+	<div>
+    	<a href="<c:url value="getSalario.htm"/>">Mostrar el salario de un empleado</a>
+	</div>
 </body>
 </html>

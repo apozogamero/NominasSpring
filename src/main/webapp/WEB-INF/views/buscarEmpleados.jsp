@@ -1,6 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
+<%@ include file="/WEB-INF/views/include.jsp" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+
 <html>
 <head>
 <meta charset="ISO-8859-1">
@@ -9,11 +9,12 @@
 <body>
 	<h1>Buscar empleado</h1>
 	
-	<form action="controller?opcion=getSalario" method="POST">
-  		<label for="dni">DNI del empleado: </label>
-  		<input type="text" id="dni">
+	<form:form method="post" modelAttribute="nominaModel" action="procesarForm.htm">
+  		<form:label path="dni">DNI del empleado:</form:label>
+  		<form:input path="dni"/>
 		<input type="submit" value="Buscar">
-	</form>
-
+	</form:form>
+	
+	<a href="<c:url value="bienvenida.htm"/>">Volver</a>
 </body>
 </html>

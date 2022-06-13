@@ -5,7 +5,7 @@
 <html>
 <head>
 	<meta charset="ISO-8859-1">
-	<title>Insert title here</title>
+	<title>Mostrar salario</title>
 	<style>
         table {
         	border: 1px solid black;
@@ -14,20 +14,31 @@
         	font-weight: bold;
         	background-color: black;
         	color: white;
-        	width: 80px;
+        	width: 100px;
         	text-align: center;
+        	border: 1px solid black;
+        }
+        th {
+        	font-weight: bold;
+        	background-color: white;
+        	color: black;
+        	width: 100px;
+        	text-align: center;
+        	border: 1px solid black;
         }
 	</style>
 </head>
 <body>
+	<h1>Mostrando salario del empleado <t:out value="${model.dni}"></t:out></h1>
+
 	<table>
 		<tr>
 			<td>DNI</td>
 			<td>Salario</td>
 		</tr>
 		<tr>
-			<td><t:out value="${emp.dni}"></t:out></td>
-			<td><t:out value="${salario}"></t:out></td>
+			<th><t:out value="${model.dni}"></t:out></th>
+			<th><t:out value="${model.sueldo}"></t:out></th>
 		</tr>
 	</table>
 </body>
